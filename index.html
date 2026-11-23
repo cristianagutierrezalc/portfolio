@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Gutiérrez · Ingeniero de Sistemas</title>
+  <meta name="description" content="Portfolio de Cristian Andrés Gutiérrez, Ingeniero de Sistemas. Construyo productos digitales completos: interfaz, lógica de negocio y base de datos, con criterios de UX/UI.">
+  <meta property="og:title" content="Cristian Gutiérrez · Ingeniero de Sistemas">
+  <meta property="og:description" content="Construyo productos digitales completos: interfaz, lógica de negocio y base de datos, con criterios de UX/UI.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/cristianagutierrezalc/cristianagutierrezalc/main/assets/banner.svg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230F172A'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial,sans-serif' font-weight='bold' fill='%2338BDF8' text-anchor='middle'%3ECG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo">CG<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </nav>
+      <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-inner">
+      <p class="hero-kicker reveal">¡Hola! Soy</p>
+      <h1 class="reveal">Cristian <span class="grad">Gutiérrez</span></h1>
+      <h2 class="hero-role reveal">
+        <span id="rotatingRole">Desarrollo web</span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-lead reveal">
+        Ingeniero de Sistemas. Construyo <strong>productos digitales completos</strong>:
+        interfaz, lógica de negocio y base de datos, con criterios de <strong>UX/UI</strong>.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-ghost">Contacto</a>
+      </div>
+      <div class="hero-badges reveal">
+        <span>Java</span><span>Python</span><span>PostgreSQL</span><span>React</span><span>FastAPI</span><span>Supabase</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROYECTO DESTACADO ═══════════ -->
+  <section class="section highlight" id="destacado">
+    <div class="container">
+      <p class="section-kicker reveal">Proyecto destacado</p>
+      <h2 class="section-title reveal">GastroConnect <span class="badge badge-star">★ Sistema multi-sede</span></h2>
+      <p class="section-sub reveal">
+        Sistema de gestión de restaurantes multi-sede: pedidos en tiempo real de todas las sedes,
+        cupones, facturación e inventario, con una base de datos que lleva la lógica de negocio.
+      </p>
+
+      <figure class="shot shot-main reveal">
+        <img src="https://raw.githubusercontent.com/cristianagutierrezalc/cristianagutierrezalc/main/assets/pedidos-web.png"
+             alt="GastroConnect · Centro de pedidos web en tiempo real" loading="lazy">
+        <figcaption>Centro de pedidos web: aceptar, preparar y despachar los pedidos de todas las sedes en tiempo real.</figcaption>
+      </figure>
+
+      <div class="shot-grid reveal">
+        <figure class="shot">
+          <img src="https://raw.githubusercontent.com/cristianagutierrezalc/cristianagutierrezalc/main/assets/cupones.png"
+               alt="GastroConnect · Módulo de cupones y promociones" loading="lazy">
+          <figcaption>Cupones con descuento, compra mínima y usos por cliente.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="https://raw.githubusercontent.com/cristianagutierrezalc/cristianagutierrezalc/main/assets/inicio-sesion.png"
+               alt="GastroConnect · Inicio de sesión con roles" loading="lazy">
+          <figcaption>Acceso con roles, credenciales cifradas y sesión por sede.</figcaption>
+        </figure>
+      </div>
+
+      <div class="feature-grid reveal">
+        <div class="feature-card">
+          <h3>🖥️ Aplicación de escritorio</h3>
+          <ul>
+            <li>Java 17 + JavaFX 21, modular con Maven</li>
+            <li>Interfaz FXML + CSS, rediseñada desde Figma</li>
+            <li>Instalador Windows con <code>jpackage</code></li>
+            <li>Tema claro y oscuro</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>🗄️ Base de datos</h3>
+          <ul>
+            <li>PostgreSQL en Supabase: 21 tablas y 10 vistas</li>
+            <li>Aislamiento por tenant y sede con RLS (74 políticas)</li>
+            <li>39 funciones de negocio en PL/pgSQL</li>
+            <li><strong>168 pruebas end-to-end</strong> sobre la base real</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="chips reveal">
+        <span>Java</span><span>JavaFX</span><span>Maven</span><span>PostgreSQL</span><span>Supabase</span><span>RLS</span><span>PL/pgSQL</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROYECTOS ═══════════ -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <p class="section-kicker reveal">Portafolio</p>
+      <h2 class="section-title reveal">Otros proyectos</h2>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-head head-blue">PE</div>
+          <div class="project-body">
+            <div class="project-meta"><span class="badge badge-live">En desarrollo</span> FastAPI + React</div>
+            <h3>PEA-i Plataforma</h3>
+            <p>Programa Estadístico de Análisis de Investigación de la Universidad Popular del Cesar. API REST con autenticación JWT por roles, dashboard con KPIs, CRUD de grupos e investigadores, y despliegue con Docker Compose.</p>
+            <p class="chips"><span>FastAPI</span><span>SQLAlchemy</span><span>React</span><span>Vite</span><span>Tailwind</span><span>Docker</span></p>
+            <a class="project-link" href="https://github.com/cristianagutierrezalc/peai-plataforma" target="_blank" rel="noopener">Ver repositorio →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head head-fire">🔥</div>
+          <div class="project-body">
+            <div class="project-meta"><span class="badge badge-live">Publicado</span> FastAPI + HTML/CSS/JS</div>
+            <h3>Menú digital · Fuego &amp; Carbón</h3>
+            <p>Menú digital para restaurante con frontend y API separados. El backend en FastAPI es la única fuente de verdad del catálogo: el frontend ya no mantiene su propia copia y no se desincroniza.</p>
+            <p class="chips"><span>Python</span><span>FastAPI</span><span>JavaScript</span></p>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/cristianagutierrezalc/pagdemodev" target="_blank" rel="noopener">Frontend →</a>
+              <a class="project-link" href="https://github.com/cristianagutierrezalc/backend-fuego-carbon" target="_blank" rel="noopener">API →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head head-cyan">₲</div>
+          <div class="project-body">
+            <div class="project-meta"><span class="badge badge-live">Publicado</span> HTML + FastAPI</div>
+            <h3>WEBPRICE · Cotizador Dev</h3>
+            <p>Herramienta web para que una agencia o desarrollador comparta un enlace con sus clientes y ellos mismos calculen la estimación de inversión de su página web, en pesos colombianos.</p>
+            <p class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>FastAPI</span></p>
+            <a class="project-link" href="https://github.com/cristianagutierrezalc/Web-Cotizador-Dev" target="_blank" rel="noopener">Ver repositorio →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head head-purple">P</div>
+          <div class="project-body">
+            <div class="project-meta"><span class="badge badge-academic">Proyecto académico</span> Python + Tkinter</div>
+            <h3>Sistema PITA</h3>
+            <p>Programa Integrado de Transacciones Académicas: lógica de cálculo de nómina, matrículas y promedios, con interfaz gráfica en Tkinter y persistencia en archivos.</p>
+            <p class="chips"><span>Python</span><span>Tkinter</span><span>Estructuras de datos</span></p>
+            <a class="project-link" href="https://github.com/cristianagutierrezalc/Pita-Project" target="_blank" rel="noopener">Ver repositorio →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STACK ═══════════ -->
+  <section class="section section-alt" id="stack">
+    <div class="container">
+      <p class="section-kicker reveal">Tecnologías</p>
+      <h2 class="section-title reveal">Stack que uso</h2>
+      <div class="stack-grid">
+        <div class="stack-card reveal">
+          <h3>💻 Lenguajes</h3>
+          <p class="chips"><span>Java 17</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>SQL / PL-pgSQL</span><span>HTML</span><span>CSS</span></p>
+        </div>
+        <div class="stack-card reveal">
+          <h3>⚙️ Backend &amp; Frameworks</h3>
+          <p class="chips"><span>FastAPI</span><span>Flask</span><span>JavaFX 21</span><span>Maven</span><span>Node.js</span><span>React</span></p>
+        </div>
+        <div class="stack-card reveal">
+          <h3>🗄️ Datos</h3>
+          <p class="chips"><span>PostgreSQL</span><span>Supabase</span><span>RLS</span><span>SQLite</span><span>Vistas materializadas</span></p>
+        </div>
+        <div class="stack-card reveal">
+          <h3>🛠️ Herramientas</h3>
+          <p class="chips"><span>Git</span><span>Docker</span><span>Figma</span><span>Swagger / OpenAPI</span><span>jpackage</span></p>
+        </div>
+      </div>
+
+      <div class="stats-row reveal">
+        <img src="https://github-readme-stats.vercel.app/api?username=cristianagutierrezalc&show_icons=true&hide_border=true&bg_color=0B1120&title_color=38BDF8&icon_color=0EA5E9&text_color=CBD5E1&include_all_commits=true&count_private=true" alt="Estadísticas de GitHub" loading="lazy">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cristianagutierrezalc&layout=compact&hide_border=true&bg_color=0B1120&title_color=38BDF8&text_color=CBD5E1&langs_count=8" alt="Lenguajes más usados" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SOBRE MÍ ═══════════ -->
+  <section class="section" id="sobre-mi">
+    <div class="container about-grid">
+      <div>
+        <p class="section-kicker reveal">Quién soy</p>
+        <h2 class="section-title reveal">Sobre mí</h2>
+        <p class="reveal">
+          Me interesa convertir necesidades reales en productos digitales que funcionen de verdad:
+          claros para el usuario y sostenibles en el tiempo. Normalmente cubro un proyecto completo,
+          de la interfaz a la consulta SQL.
+        </p>
+        <p class="reveal">
+          Mi formación principal es la <strong>Ingeniería de Sistemas</strong> (Universidad Popular del Cesar),
+          complementada con certificaciones en <strong>ciberseguridad</strong> y
+          <strong>bases de datos</strong> (Oracle: Database Foundations, SQL y PL/SQL).
+        </p>
+        <p class="reveal quote">
+          “Entender el problema antes de escribir código. Ese es el orden en el que avanza cada proyecto.”
+        </p>
+      </div>
+      <div class="principles reveal">
+        <div class="principle"><h4>Claridad</h4><p>Código y estructuras fáciles de comprender.</p></div>
+        <div class="principle"><h4>Escalabilidad</h4><p>Soluciones preparadas para crecer.</p></div>
+        <div class="principle"><h4>Experiencia</h4><p>Interfaces pensadas desde el usuario.</p></div>
+        <div class="principle"><h4>Evolución</h4><p>Mejora continua de cada solución.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACTO ═══════════ -->
+  <section class="section section-alt" id="contacto">
+    <div class="container contact-inner">
+      <p class="section-kicker reveal">Hablemos</p>
+      <h2 class="section-title reveal">Conectemos</h2>
+      <p class="section-sub reveal">
+        ¿Tienes una idea, un proyecto o quieres colaborar en una solución digital? Escríbeme.
+      </p>
+      <div class="contact-actions reveal">
+        <a class="btn btn-primary" href="mailto:cristianagutierrez@unicesar.edu.co">✉️ cristianagutierrez@unicesar.edu.co</a>
+        <a class="btn btn-ghost" href="https://github.com/cristianagutierrezalc" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/cristian-andres-gutierrez-a00443353" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/Andressdev.ofic/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <img class="footer-wave" src="https://raw.githubusercontent.com/cristianagutierrezalc/cristianagutierrezalc/main/assets/onda.svg"
+         alt="Ingeniería · Desarrollo · Datos · Diseño" loading="lazy">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Cristian Andrés Gutiérrez</p>
+      <p>Hecho con HTML, CSS y JavaScript · <a href="https://github.com/cristianagutierrezalc/portfolio" target="_blank" rel="noopener">Código fuente</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

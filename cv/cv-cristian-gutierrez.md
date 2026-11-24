@@ -1,6 +1,6 @@
 # CV — Cristian Andrés Gutiérrez
 
-> Versión Markdown del CV (para copiar/pegar en Canva, LinkedIn o sistemas ATS).
+> Versión Markdown del CV (para copiar/pegar en LinkedIn, Canva o formularios ATS).
 > La versión visual imprimible está en `cv/index.html`.
 
 ---
@@ -8,45 +8,46 @@
 **CRISTIAN ANDRÉS GUTIÉRREZ**
 Estudiante de Ingeniería de Sistemas · Desarrollo Full-Stack
 
-📍 Valledupar, Cesar, Colombia · 📱 +57 304 261 1924
-✉️ cristianagutierrez@unicesar.edu.co
-🐙 github.com/cristianagutierrezalc · 💼 linkedin.com/in/cristian-andres-gutierrez-a00443353
+Valledupar, Cesar, Colombia · Tel: +57 304 261 1924 · cristianagutierrez@unicesar.edu.co
+GitHub: github.com/cristianagutierrezalc · LinkedIn: linkedin.com/in/cristian-andres-gutierrez-a00443353
+Disponibilidad: prácticas y proyectos freelance, presencial en Valledupar o remoto
 
 ## Perfil profesional
 
-Estudiante de 4.º semestre de Ingeniería de Sistemas. Construyo productos digitales completos — interfaz, lógica de negocio y base de datos — con criterios de UX/UI, y ya puse en producción un sistema para un negocio real. Fortalezas en APIs REST, modelado de datos con seguridad a nivel de fila (RLS) y pruebas automatizadas. Entiendo el problema antes de escribir código: busco una oportunidad para aportar soluciones claras, mantenibles y escalables mientras sigo creciendo.
+Soy estudiante de 4.º semestre de Ingeniería de Sistemas en la Universidad Popular del Cesar. Aprendí a programar construyendo cosas de verdad: un restaurante de mi ciudad usa en producción un menú digital que hice de cero, y mantengo un sistema de gestión multi-sede con base de datos propia y pruebas automatizadas. Prefiero cubrir los proyectos completos, desde la interfaz hasta la consulta SQL, y antes de escribir código procuro entender bien el problema.
 
 ## Experiencia en proyectos
 
-*Proyectos propios y para clientes: experiencia técnica aplicada, de la idea al despliegue.*
+Proyectos propios y para clientes: de la idea al despliegue.
 
-**Menú digital Fuego & Carbón — sistema en producción para un negocio real** · Python, FastAPI, HTML/CSS/JS
-- Backend FastAPI como única fuente de verdad del catálogo y frontend publicado. Eliminé la desincronización del menú: cambios de precios y disponibilidad se reflejan de inmediato.
+**Menú digital Fuego & Carbón, sistema en producción para un restaurante real** · Python, FastAPI, HTML, CSS, JavaScript
+El backend centraliza precios y catálogo como única fuente de verdad. Antes el frontend guardaba su propia copia del menú y se desincronizaba; ahora cualquier cambio de precio o disponibilidad se refleja de inmediato, sin tocar el HTML.
 
-**GastroConnect — Sistema de gestión de restaurantes multi-sede** · Java 17, JavaFX 21, PostgreSQL, Supabase
-- Arquitectura modular con Maven; interfaz FXML + CSS rediseñada desde Figma, tema claro/oscuro.
-- Base de datos con 21 tablas y 10 vistas; aislamiento multi-tenant por sede con RLS (74 políticas) y 39 funciones de negocio en PL/pgSQL.
-- 168 pruebas end-to-end sobre la base real; instalador Windows con jpackage.
+**GastroConnect, sistema de gestión de restaurantes multi-sede** · Java 17, JavaFX 21, PostgreSQL, Supabase
+- Aplicación de escritorio modular con Maven; la interfaz la rediseñé desde Figma y la empaqueté con jpackage para instalar en Windows sin necesidad de Java.
+- Base de datos en PostgreSQL sobre Supabase con 21 tablas: la lógica de negocio vive en 39 funciones PL/pgSQL y el aislamiento por tenant y sede se resuelve con 74 políticas de seguridad RLS.
+- Escribí 168 pruebas end-to-end contra la base de datos real.
 
-**PEA-i Plataforma — Análisis estadístico de investigación (UPC)** · FastAPI, React 18, Docker
-- API REST documentada (Swagger/OpenAPI) con JWT por roles: admin, coordinador, investigador.
-- Dashboard con KPIs y gráficos (Recharts); despliegue con Docker Compose.
+**PEA-i Plataforma, análisis estadístico de investigación para mi universidad** · FastAPI, React 18, Docker
+- API REST documentada en Swagger con autenticación JWT por roles: admin, coordinador e investigador.
+- Frontend en React con Vite y Tailwind, dashboard con KPIs y gráficos; el despliegue completo corre con Docker Compose.
 
-**WEBPRICE — Cotizador web** · HTML, CSS, JS, FastAPI
-- Estimaciones de inversión en COP; el backend valida y calcula todos los precios.
+**WEBPRICE, cotizador web de proyectos** · HTML, CSS, JavaScript, FastAPI
+Los clientes de una agencia calculan por sí mismos estimaciones de inversión en pesos colombianos. El backend calcula todos los precios y nunca confía en los datos que envía el navegador.
 
 ## Formación académica
 
-**Ingeniería de Sistemas** — Universidad Popular del Cesar, Valledupar · 2025 – en curso (4.º semestre)
-Proyecto PITA — Taller de Estructura de Datos (estructuras de datos propias, Tkinter, persistencia en archivos).
+**Ingeniería de Sistemas, Universidad Popular del Cesar** · 2025 – en curso, 4.º semestre · Valledupar, Colombia
+
+Proyecto PITA, taller de Estructura de Datos: cálculo de nómina, matrículas y promedios con estructuras de datos propias, interfaz en Tkinter y persistencia en archivos.
 
 ## Idiomas
 
-Español (nativo) · Inglés (A2, en formación)
+Español: nativo. Inglés: A2, en formación.
 
 ## Habilidades técnicas
 
-- **Lenguajes:** Java 17, Python, JavaScript, TypeScript, SQL/PL·pgSQL
-- **Backend:** FastAPI, Flask, JavaFX 21, Maven, Node.js
-- **Frontend:** React 18, Vite, Tailwind CSS, HTML5, CSS3, Figma
-- **Datos y herramientas:** PostgreSQL, Supabase, RLS, SQLite, Docker, Git, Swagger, jpackage
+- **Lenguajes:** Java 17, Python, JavaScript, TypeScript, SQL y PL/pgSQL, HTML, CSS
+- **Backend:** FastAPI, Flask, JavaFX 21, Maven, Node.js, Uvicorn, APIs REST
+- **Frontend:** React 18, Vite, Tailwind CSS, Figma
+- **Datos y herramientas:** PostgreSQL, Supabase, Row Level Security, SQLite, Docker, Git, Swagger, pruebas automatizadas

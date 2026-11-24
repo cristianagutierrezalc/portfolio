@@ -40,13 +40,6 @@ Estudiante de 4.º semestre de Ingeniería de Sistemas. Construyo productos digi
 **Ingeniería de Sistemas** — Universidad Popular del Cesar, Valledupar · 2025 – en curso (4.º semestre)
 Proyecto PITA — Taller de Estructura de Datos (estructuras de datos propias, Tkinter, persistencia en archivos).
 
-## Certificaciones
-
-- Fundamentos de Ciberseguridad
-- Oracle — Database Foundations
-- Oracle — Data Programming with SQL
-- Oracle — Data Programming with PL/SQL
-
 ## Idiomas
 
 Español (nativo) · Inglés (A2, en formación)

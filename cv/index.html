@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV · Cristian Andrés Gutiérrez — Ingeniero de Sistemas</title>
+<title>CV · Cristian Andrés Gutiérrez — Estudiante de Ingeniería de Sistemas</title>
 <!--
   ═══════════════════════════════════════════════════════════
   CV IMPRIMIBLE (A4) · Para generar el PDF:
@@ -11,9 +11,6 @@
   2. Ctrl + P → Destino: "Guardar como PDF"
   3. Papel: A4 · Márgenes: Ninguno · Activa "Gráficos de fondo"
   ═══════════════════════════════════════════════════════════
-  CAMPOS POR COMPLETAR (busca "EDITAR"):
-  · Ciudad · Teléfono · Año de graduación · Nivel de inglés
-  · Experiencia laboral/prácticas (sección opcional)
 -->
 <style>
   :root {
@@ -56,6 +53,7 @@
     padding-bottom: 3px; margin-bottom: 7px;
   }
   h3 { font-size: 10.5pt; color: #0f172a; }
+  .section-note { font-size: 9pt; color: var(--muted); font-style: italic; margin-bottom: 8px; }
   .item { margin-bottom: 8px; }
   .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
   .item-head .when { font-size: 8.5pt; color: var(--muted); white-space: nowrap; }
@@ -94,17 +92,16 @@
 
 <p class="no-print">
   💡 <strong>Para generar el PDF:</strong> Ctrl + P → "Guardar como PDF" · Papel A4 · Márgenes: ninguno · Activa "Gráficos de fondo".
-  Los campos marcados con <strong>[EDITAR: …]</strong> son los que debes completar.
 </p>
 
 <div class="page">
 
   <header class="cv-head">
     <h1>CRISTIAN ANDRÉS GUTIÉRREZ</h1>
-    <p class="role">Ingeniero de Sistemas · Desarrollo Full-Stack</p>
+    <p class="role">Estudiante de Ingeniería de Sistemas · Desarrollo Full-Stack</p>
     <p class="contact">
-      <span>[EDITAR: ciudad], Colombia</span>
-      <span>[EDITAR: +57 ···· ····]</span>
+      <span>📍 Valledupar, Cesar, Colombia</span>
+      <span>📱 +57 304 261 1924</span>
       <span>✉ cristianagutierrez@unicesar.edu.co</span><br>
       <span>🐙 <a href="https://github.com/cristianagutierrezalc">github.com/cristianagutierrezalc</a></span>
       <span>💼 <a href="https://www.linkedin.com/in/cristian-andres-gutierrez-a00443353">linkedin.com/in/cristian-andres-gutierrez</a></span>
@@ -113,11 +110,20 @@
 
   <section>
     <h2>Perfil profesional</h2>
-    <p>Ingeniero de Sistemas orientado a construir <strong>productos digitales completos</strong>: interfaz, lógica de negocio y base de datos, con criterios de UX/UI. Experiencia en aplicaciones de escritorio y web, APIs REST, modelado de datos con seguridad a nivel de fila (RLS) y pruebas automatizadas. Priorizo soluciones <strong>claras, mantenibles y escalables</strong>, entendiendo el problema antes de escribir código.</p>
+    <p>Estudiante de 4.º semestre de Ingeniería de Sistemas. Construyo <strong>productos digitales completos</strong> — interfaz, lógica de negocio y base de datos — con criterios de UX/UI, y ya puse <strong>en producción un sistema para un negocio real</strong>. Fortalezas en APIs REST, modelado de datos con seguridad a nivel de fila (RLS) y pruebas automatizadas. Entiendo el problema antes de escribir código: busco una oportunidad para aportar soluciones claras, mantenibles y escalables mientras sigo creciendo.</p>
   </section>
 
   <section>
-    <h2>Proyectos destacados</h2>
+    <h2>Experiencia en proyectos</h2>
+    <p class="section-note">Proyectos propios y para clientes: experiencia técnica aplicada, de la idea al despliegue.</p>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>Menú digital Fuego &amp; Carbón — sistema en producción para un negocio real</h3>
+        <span class="when">Python · FastAPI · HTML/CSS/JS</span>
+      </div>
+      <p>Backend FastAPI como <strong>única fuente de verdad</strong> del catálogo y frontend publicado. Eliminé la desincronización del menú: los cambios de precios y disponibilidad se reflejan de inmediato, sin tocar el HTML.</p>
+    </div>
 
     <div class="item">
       <div class="item-head">
@@ -127,7 +133,7 @@
       <ul>
         <li>Arquitectura modular con Maven; interfaz FXML + CSS rediseñada desde Figma, con tema claro/oscuro.</li>
         <li>Base de datos con 21 tablas y 10 vistas; aislamiento multi-tenant por sede mediante <strong>RLS (74 políticas)</strong> y 39 funciones de negocio en PL/pgSQL.</li>
-        <li><strong>168 pruebas end-to-end</strong> sobre la base real; instalador de Windows con jpackage (sin requerir Java instalado).</li>
+        <li><strong>168 pruebas end-to-end</strong> sobre la base real; instalador de Windows con jpackage.</li>
       </ul>
     </div>
 
@@ -138,17 +144,8 @@
       </div>
       <ul>
         <li>API REST documentada (Swagger/OpenAPI) con autenticación JWT por roles: admin, coordinador e investigador.</li>
-        <li>Dashboard con KPIs y gráficos (Recharts), CRUD de grupos, investigadores y productos.</li>
-        <li>Despliegue completo con Docker Compose (backend + frontend + PostgreSQL).</li>
+        <li>Dashboard con KPIs y gráficos (Recharts); despliegue completo con Docker Compose.</li>
       </ul>
-    </div>
-
-    <div class="item">
-      <div class="item-head">
-        <h3>Menú digital Fuego &amp; Carbón — sistema en producción</h3>
-        <span class="when">Python · FastAPI · HTML/CSS/JS</span>
-      </div>
-      <p>Backend FastAPI como <strong>única fuente de verdad</strong> del catálogo y frontend publicado para un restaurante real, eliminando la desincronización del menú.</p>
     </div>
 
     <div class="item">
@@ -166,9 +163,9 @@
       <div class="item">
         <div class="item-head">
           <h3>Ingeniería de Sistemas</h3>
-          <span class="when">[EDITAR: 20XX – 20XX]</span>
+          <span class="when">2025 – en curso</span>
         </div>
-        <p>Universidad Popular del Cesar — Valledupar, Colombia <span class="tag">[EDITAR: estado]</span></p>
+        <p>Universidad Popular del Cesar — Valledupar, Colombia <span class="tag">· 4.º semestre</span></p>
       </div>
       <div class="item">
         <h3>Proyecto PITA — Taller de Estructura de Datos</h3>
@@ -189,7 +186,7 @@
 
       <h2>Idiomas</h2>
       <div class="item">
-        <p>Español — nativo<br>Inglés — [EDITAR: nivel]</p>
+        <p>Español — nativo<br>Inglés — A2 (en formación)</p>
       </div>
     </section>
   </div>

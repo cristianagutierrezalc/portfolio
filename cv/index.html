@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV · Cristian Andrés Gutiérrez — Ingeniero de Sistemas</title>
+<!--
+  ═══════════════════════════════════════════════════════════
+  CV IMPRIMIBLE (A4) · Para generar el PDF:
+  1. Abre esta página en el navegador
+  2. Ctrl + P → Destino: "Guardar como PDF"
+  3. Papel: A4 · Márgenes: Ninguno · Activa "Gráficos de fondo"
+  ═══════════════════════════════════════════════════════════
+  CAMPOS POR COMPLETAR (busca "EDITAR"):
+  · Ciudad · Teléfono · Año de graduación · Nivel de inglés
+  · Experiencia laboral/prácticas (sección opcional)
+-->
+<style>
+  :root {
+    --ink: #1e293b;
+    --muted: #475569;
+    --accent: #0369a1;
+    --line: #cbd5e1;
+    --soft: #f1f5f9;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--ink);
+    background: #e2e8f0;
+    line-height: 1.45;
+    font-size: 10.5pt;
+  }
+  .page {
+    background: #fff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 8mm auto;
+    padding: 14mm 16mm;
+    box-shadow: 0 4px 24px rgba(2,6,23,.18);
+  }
+
+  /* ── Encabezado ── */
+  .cv-head { border-bottom: 2.5px solid var(--accent); padding-bottom: 10px; margin-bottom: 12px; }
+  .cv-head h1 { font-size: 20pt; letter-spacing: .5px; color: #0f172a; }
+  .cv-head .role { font-size: 12pt; color: var(--accent); font-weight: 600; margin-top: 2px; }
+  .cv-head .contact { font-size: 9pt; color: var(--muted); margin-top: 6px; }
+  .cv-head .contact span { margin-right: 12px; white-space: nowrap; }
+  .cv-head .contact a { color: var(--muted); text-decoration: none; }
+
+  /* ── Secciones ── */
+  section { margin-bottom: 11px; break-inside: avoid; }
+  h2 {
+    font-size: 11pt; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--accent); border-bottom: 1px solid var(--line);
+    padding-bottom: 3px; margin-bottom: 7px;
+  }
+  h3 { font-size: 10.5pt; color: #0f172a; }
+  .item { margin-bottom: 8px; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .item-head .when { font-size: 8.5pt; color: var(--muted); white-space: nowrap; }
+  .item p { font-size: 9.5pt; color: var(--muted); margin-top: 2px; }
+  .item ul { margin: 3px 0 0 16px; font-size: 9.5pt; color: var(--muted); }
+  .item li { margin-bottom: 2px; }
+  .item strong { color: #0f172a; }
+  .tag { color: var(--accent); font-size: 8.5pt; }
+
+  /* ── Chips de habilidades ── */
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+  .skill-group h3 { font-size: 9.5pt; margin-bottom: 4px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .chips span {
+    background: var(--soft); border: 1px solid var(--line);
+    border-radius: 4px; padding: 2px 8px; font-size: 8.5pt; color: var(--ink);
+  }
+
+  .two-col { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; }
+
+  /* ── Barra de ayuda (no se imprime) ── */
+  .no-print {
+    max-width: 210mm; margin: 10px auto 0; background: #0f172a; color: #cbd5e1;
+    padding: 10px 16px; border-radius: 8px; font-size: 9.5pt;
+  }
+  .no-print strong { color: #38bdf8; }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: auto; min-height: auto; padding: 0; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<p class="no-print">
+  💡 <strong>Para generar el PDF:</strong> Ctrl + P → "Guardar como PDF" · Papel A4 · Márgenes: ninguno · Activa "Gráficos de fondo".
+  Los campos marcados con <strong>[EDITAR: …]</strong> son los que debes completar.
+</p>
+
+<div class="page">
+
+  <header class="cv-head">
+    <h1>CRISTIAN ANDRÉS GUTIÉRREZ</h1>
+    <p class="role">Ingeniero de Sistemas · Desarrollo Full-Stack</p>
+    <p class="contact">
+      <span>[EDITAR: ciudad], Colombia</span>
+      <span>[EDITAR: +57 ···· ····]</span>
+      <span>✉ cristianagutierrez@unicesar.edu.co</span><br>
+      <span>🐙 <a href="https://github.com/cristianagutierrezalc">github.com/cristianagutierrezalc</a></span>
+      <span>💼 <a href="https://www.linkedin.com/in/cristian-andres-gutierrez-a00443353">linkedin.com/in/cristian-andres-gutierrez</a></span>
+    </p>
+  </header>
+
+  <section>
+    <h2>Perfil profesional</h2>
+    <p>Ingeniero de Sistemas orientado a construir <strong>productos digitales completos</strong>: interfaz, lógica de negocio y base de datos, con criterios de UX/UI. Experiencia en aplicaciones de escritorio y web, APIs REST, modelado de datos con seguridad a nivel de fila (RLS) y pruebas automatizadas. Priorizo soluciones <strong>claras, mantenibles y escalables</strong>, entendiendo el problema antes de escribir código.</p>
+  </section>
+
+  <section>
+    <h2>Proyectos destacados</h2>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>GastroConnect — Sistema de gestión de restaurantes multi-sede</h3>
+        <span class="when">Java 17 · JavaFX 21 · PostgreSQL · Supabase</span>
+      </div>
+      <ul>
+        <li>Arquitectura modular con Maven; interfaz FXML + CSS rediseñada desde Figma, con tema claro/oscuro.</li>
+        <li>Base de datos con 21 tablas y 10 vistas; aislamiento multi-tenant por sede mediante <strong>RLS (74 políticas)</strong> y 39 funciones de negocio en PL/pgSQL.</li>
+        <li><strong>168 pruebas end-to-end</strong> sobre la base real; instalador de Windows con jpackage (sin requerir Java instalado).</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>PEA-i Plataforma — Análisis estadístico de investigación (Universidad Popular del Cesar)</h3>
+        <span class="when">FastAPI · React 18 · Docker</span>
+      </div>
+      <ul>
+        <li>API REST documentada (Swagger/OpenAPI) con autenticación JWT por roles: admin, coordinador e investigador.</li>
+        <li>Dashboard con KPIs y gráficos (Recharts), CRUD de grupos, investigadores y productos.</li>
+        <li>Despliegue completo con Docker Compose (backend + frontend + PostgreSQL).</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>Menú digital Fuego &amp; Carbón — sistema en producción</h3>
+        <span class="when">Python · FastAPI · HTML/CSS/JS</span>
+      </div>
+      <p>Backend FastAPI como <strong>única fuente de verdad</strong> del catálogo y frontend publicado para un restaurante real, eliminando la desincronización del menú.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <h3>WEBPRICE — Cotizador web de proyectos</h3>
+        <span class="when">HTML · CSS · JS · FastAPI</span>
+      </div>
+      <p>Herramienta para que clientes calculen estimaciones de inversión en COP; el backend valida y calcula los precios (nunca confía en datos del navegador).</p>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Formación académica</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Ingeniería de Sistemas</h3>
+          <span class="when">[EDITAR: 20XX – 20XX]</span>
+        </div>
+        <p>Universidad Popular del Cesar — Valledupar, Colombia <span class="tag">[EDITAR: estado]</span></p>
+      </div>
+      <div class="item">
+        <h3>Proyecto PITA — Taller de Estructura de Datos</h3>
+        <p>Programa Integrado de Transacciones Académicas: estructuras de datos propias, Tkinter y persistencia en archivos.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certificaciones</h2>
+      <div class="item">
+        <ul>
+          <li><strong>Fundamentos de Ciberseguridad</strong></li>
+          <li><strong>Oracle — Database Foundations</strong></li>
+          <li><strong>Oracle — Data Programming with SQL</strong></li>
+          <li><strong>Oracle — Data Programming with PL/SQL</strong></li>
+        </ul>
+      </div>
+
+      <h2>Idiomas</h2>
+      <div class="item">
+        <p>Español — nativo<br>Inglés — [EDITAR: nivel]</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <h2>Habilidades técnicas</h2>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Lenguajes</h3>
+        <div class="chips"><span>Java 17</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL / PL·pgSQL</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <div class="chips"><span>FastAPI</span><span>Flask</span><span>JavaFX 21</span><span>Maven</span><span>Node.js</span><span>Uvicorn</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="chips"><span>React 18</span><span>Vite</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span><span>Figma</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Datos &amp; Herramientas</h3>
+        <div class="chips"><span>PostgreSQL</span><span>Supabase</span><span>RLS</span><span>SQLite</span><span>Docker</span><span>Git</span><span>Swagger</span><span>jpackage</span></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
